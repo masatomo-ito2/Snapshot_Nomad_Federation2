@@ -15,32 +15,32 @@ variable key_name {
   description = "Keypair name to ssh"
 }
 
-variable owner {
-  default = ""
+variable owner  {
+	default = ""
 }
 
 variable consul_version {
-  default = "1.8.0"
+	default = "1.8.0"
 }
 
 variable nomad_version {
-  default = "0.12.5"
+	default = "0.12.5"
 }
 
 variable name_prefix {
-  default = ""
+	default = ""
 }
 
-variable allowed_inboud_cidrs {
-  default = ["0.0.0.0/32"]
+variable allowed_inbound_cidrs {
+	default = ["0.0.0.0/32"]
 }
 
 # Optional 
 
-variable instance_type {
-  default = "t2.micro"
+variable instance_type  {
+	default = "t2.micro"
 }
 
 variable public_ip {
-  default = false
+	default = false
 }
