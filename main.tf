@@ -32,6 +32,8 @@ module "nomad-starter" {
   allowed_inbound_cidrs = var.allowed_inbound_cidrs
   consul_version        = var.consul_version
   nomad_version         = var.nomad_version
+  nomad_clients         = var.nomad_clients
+  consul_clients        = var.consul_clients
   name_prefix           = var.name_prefix
   owner                 = var.owner
   key_name              = var.key_name
