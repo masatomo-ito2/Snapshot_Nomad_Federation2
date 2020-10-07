@@ -33,7 +33,7 @@ module "nomad-starter" {
   consul_version        = var.consul_version
   nomad_version         = var.nomad_version
   nomad_clients         = var.nomad_clients
-  consul_clients        = var.consul_clients
+  nomad_servers         = var.nomad_servers
   name_prefix           = var.name_prefix
   owner                 = var.owner
   key_name              = var.key_name
