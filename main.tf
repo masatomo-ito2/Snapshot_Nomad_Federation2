@@ -28,15 +28,15 @@ module "nomad-starter" {
   version = "0.2.1"
   # insert the 6 required variables here
 
-	vpc_id = local.vpc_id
-	allowed_inbound_cidrs = var.allowed_inbound_cidrs
-	consul_version = var.consul_version
-	nomad_version = var.nomad_version
-	name_prefix = var.name_prefix
-	owner = var.owner
-	key_name = var.key_name
+  vpc_id                = local.vpc_id
+  allowed_inbound_cidrs = var.allowed_inbound_cidrs
+  consul_version        = var.consul_version
+  nomad_version         = var.nomad_version
+  name_prefix           = var.name_prefix
+  owner                 = var.owner
+  key_name              = var.key_name
 
-	instance_type = var.instance_type
-	public_ip = var.public_ip
+  instance_type = var.instance_type
+  public_ip     = var.public_ip
 }
 
