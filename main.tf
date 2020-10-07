@@ -15,8 +15,8 @@ data terraform_remote_state "this" {
 }
 
 locals {
-  public_subnets = data.terraform_remote_state.this.outputs.public_subnets_japan
-  vpc_id         = data.terraform_remote_state.this.outputs.vpc_id_japan
+  public_subnets_japan = data.terraform_remote_state.this.outputs.public_subnets_japan
+  vpc_id_japan         = data.terraform_remote_state.this.outputs.vpc_id_japan
 }
 
 module "nomad-starter" {
@@ -28,7 +28,7 @@ module "nomad-starter" {
   version = "0.2.1"
   # insert the 6 required variables here
 
-  vpc_id                = local.vpc_id
+  vpc_id                = local.vpc_id_japan
   allowed_inbound_cidrs = var.allowed_inbound_cidrs
   consul_version        = var.consul_version
   nomad_version         = var.nomad_version

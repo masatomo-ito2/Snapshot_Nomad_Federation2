@@ -32,7 +32,7 @@ variable name_prefix {
 }
 
 variable allowed_inbound_cidrs {
-	default = ["0.0.0.0/32"]
+	default = ["0.0.0.0/0"]
 }
 
 # Optional 
@@ -43,4 +43,12 @@ variable instance_type  {
 
 variable public_ip {
 	default = false
+}
+
+variable nomad_clients {
+	default = 1
+}
+
+variable nomad_servers {
+	default = 1
 }
